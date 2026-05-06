@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入我们 - 北宇治高中吹奏部官网</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main animate-fade-in">
+        <div class="join-hero">
+            <div class="join-icon">🎵</div>
+            <h2>加入北宇治高中吹奏部</h2>
+            <p class="join-subtitle">一起创造美好的音乐回忆</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <section class="join-section">
+            <h3>📋 加入条件</h3>
+            <div class="conditions">
+                <div class="condition-item card-hover">
+                    <div class="condition-icon">🎓</div>
+                    <h4>基本要求</h4>
+                    <ul>
+                        <li>北宇治高中在校学生（高一至高三）</li>
+                        <li>热爱音乐，有团队合作精神</li>
+                        <li>能够按时参加社团活动和排练</li>
+                        <li>遵守社团规章制度</li>
+                    </ul>
+                </div>
+                <div class="condition-item card-hover">
+                    <div class="condition-icon">🎹</div>
+                    <h4>技术要求</h4>
+                    <ul>
+                        <li>有乐器演奏基础者优先</li>
+                        <li>零基础但对音乐有浓厚兴趣者也可报名</li>
+                        <li>能够识谱或愿意学习识谱</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="join-section">
+            <h3>📝 报名方式</h3>
+            <div class="apply-method">
+                <div class="method-item card-hover">
+                    <div class="method-icon">💻</div>
+                    <h4>线上报名</h4>
+                    <div class="method-steps">
+                        <div class="step">1. 填写下方报名表单</div>
+                        <div class="step">2. 上传个人简介（可选）</div>
+                        <div class="step">3. 提交后等待面试通知</div>
+                    </div>
+                </div>
+                <div class="method-item card-hover">
+                    <div class="method-icon">🏫</div>
+                    <h4>线下报名</h4>
+                    <div class="method-steps">
+                        <div class="step">1. 前往音乐教室领取报名表</div>
+                        <div class="step">2. 填写完整后交至社团办公室</div>
+                        <div class="step">3. 等待面试通知</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="join-section">
+            <h3>🎯 面试流程</h3>
+            <div class="interview-process">
+                <div class="process-step card-hover">
+                    <div class="step-circle">1</div>
+                    <div class="step-content">
+                        <h4>个人介绍</h4>
+                        <p>简要介绍自己的基本情况、音乐经历和加入动机</p>
+                    </div>
+                </div>
+                <div class="process-step card-hover">
+                    <div class="step-circle">2</div>
+                    <div class="step-content">
+                        <h4>技术考核</h4>
+                        <p>有基础者：演奏一首自备曲目</p>
+                        <p>零基础者：进行简单的音准和节奏感测试</p>
+                    </div>
+                </div>
+                <div class="process-step card-hover">
+                    <div class="step-circle">3</div>
+                    <div class="step-content">
+                        <h4>面试结果</h4>
+                        <p>面试后3个工作日内通过邮件或电话通知结果</p>
+                        <p>录取者将收到入团通知书和训练安排</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="join-section">
+            <h3>📨 在线报名</h3>
+            <form class="join-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">姓名 <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                </div>
+                <div class="form-group">
+                    <label for="grade">年级 <span class="required">*</span></label>
+                    <select id="grade" name="grade" required>
+                        <option value="">请选择年级</option>
+                        <option value="高一">高一</option>
+                        <option value="高二">高二</option>
+                        <option value="高三">高三</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="instrument">擅长乐器（可选）</label>
+                    <input type="text" id="instrument" name="instrument" placeholder="如：长笛、小号、架子鼓等">
+                </div>
+                <div class="form-group">
+                    <label for="experience">音乐经历（可选）</label>
+                    <textarea id="experience" name="experience" rows="3" placeholder="请简要描述您的音乐学习经历..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact">联系方式 <span class="required">*</span></label>
+                    <input type="text" id="contact" name="contact" required placeholder="手机号或邮箱">
+                </div>
+                <div class="form-group submit-group">
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-icon">✨</span>
+                        提交报名
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 北宇治高中吹奏部 版权所有</p>
+    </div>
+
+    <script src="header.js"></script>
+
+    <style>
+        .join-hero {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .join-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .join-subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .conditions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .condition-item {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .condition-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .condition-item h4 {
+            color: #2b21e7;
+            margin-bottom: 12px;
+        }
+
+        .condition-item ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .condition-item li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .apply-method {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .method-item {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .method-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .method-item h4 {
+            color: #2b21e7;
+            margin-bottom: 12px;
+        }
+
+        .method-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .step::before {
+            content: '✓';
+            color: #2b21e7;
+            font-weight: bold;
+        }
+
+        .interview-process {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #2b21e7, #007bff);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .process-step .step-content {
+            flex: 1;
+        }
+
+        .process-step .step-content h4 {
+            color: #2b21e7;
+            margin: 0 0 8px 0;
+        }
+
+        .process-step .step-content p {
+            color: #555;
+            margin: 0 0 5px 0;
+            font-size: 14px;
+        }
+
+        .join-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .required {
+            color: #e74c3c;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2b21e7;
+            box-shadow: 0 0 0 3px rgba(43, 33, 231, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .submit-group {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .submit-btn {
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #2b21e7, #007bff);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(43, 33, 231, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(43, 33, 231, 0.4);
+        }
+
+        .btn-icon {
+            font-size: 18px;
+        }
+    </style>
+</body>
+</html>

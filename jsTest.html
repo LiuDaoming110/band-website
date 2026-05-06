@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function test() {
+            console.log("hello world");
+        }
+        test();
+        test();
+        function isDST(date, country) {
+            // 实现夏令时判断逻辑
+            // 这里只是一个简单的示例，实际情况可能更复杂
+            // 你可以根据具体的国家和规则来实现夏令时判断
+            // 返回 true 表示夏令时，返回 false 表示非夏令时
+            // 根据不同国家的夏令时规则判断
+            // 这里是一个简化的实现，实际需要根据具体国家的规则调整
+            const month = date.getMonth();
+            const day = date.getDate();
+
+            // 例如：中国不使用夏令时
+            if (country === 'China') {
+                return false;
+            }
+
+            // 美国夏令时：3月第二个周日到11月第一个周日
+            if (country === 'USA') {
+                // 简化判断：4-10月为夏令时
+                return month >= 3 && month <= 10;
+            }
+
+            return false;
+        }
+        function getLocalTime(country, timeZone = 8) {
+            // 目标表时间，东八区
+            // 获取本地时间与格林威治时间的时间差(注意是分钟，记得转换)
+            const now = new Date();
+            const diff = now.getTimezoneOffset();
+            // 根据本地时间和时间差获得格林威治时间
+            const absTime = now.getTime() + diff * 60 * 1000;
+            // 根据格林威治时间和各地时区，得到各地时区的时间
+            let localTime = new Date(absTime + timeZone * 60 * 60 * 1000);
+            //处理夏令时(isDST为自己封装的处理方法)
+            if (isDST(localTime, country)) {
+                localTime = new Date(absTime + (timeZone + 1) * 60 * 60 * 1000);
+            }
+            return localTime;
+        }
+        console.log(getLocalTime('USA'));
+        let arr = [1, 2, 3, 4, 5];
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+    </script>
+</body>
+
+</html>

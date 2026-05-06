@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北宇治高中吹奏部官网</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main animate-fade-in">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h2>欢迎来到北宇治高中吹奏部</h2>
+                <p class="hero-text">
+                    北宇治高中吹奏部成立于1985年，至今已有40余年的历史。我们秉承"音乐育人，团结奋进"的理念，致力于培养学生的音乐素养和团队合作精神。
+                </p>
+                <div class="button-group">
+                    <a href="join.html" class="btn-link">
+                        <span class="icon">🎵</span>
+                        加入我们
+                    </a>
+                    <a href="music.html" class="btn-link">
+                        <span class="icon">🎶</span>
+                        音乐展示
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/kumiko_avatar.png" alt="吹奏部成员" class="hero-img">
+                <div class="floating-notes">
+                    <span class="music-note">♪</span>
+                    <span class="music-note" style="animation-delay: 0.5s;">♫</span>
+                    <span class="music-note" style="animation-delay: 1s;">♩</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <section class="features">
+            <h3>我们的特色</h3>
+            <div class="features-grid">
+                <div class="feature-card card-hover">
+                    <div class="feature-icon">🏆</div>
+                    <h4>荣誉成就</h4>
+                    <p>多次获得全国吹奏乐大赛金奖，是北宇治高中的骄傲</p>
+                </div>
+                <div class="feature-card card-hover">
+                    <div class="feature-icon">🎹</div>
+                    <h4>专业指导</h4>
+                    <p>由经验丰富的田中老师指导，教学水平一流</p>
+                </div>
+                <div class="feature-card card-hover">
+                    <div class="feature-icon">👥</div>
+                    <h4>团队合作</h4>
+                    <p>60余名成员同心协力，共同追求音乐梦想</p>
+                </div>
+                <div class="feature-card card-hover">
+                    <div class="feature-icon">🎼</div>
+                    <h4>丰富曲目</h4>
+                    <p>涵盖古典、现代等多种风格，展现音乐魅力</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="gallery">
+            <h3>精彩瞬间</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=演奏现场" alt="演奏现场">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=团队合影" alt="团队合影">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=比赛获奖" alt="比赛获奖">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=日常排练" alt="日常排练">
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="news-preview">
+            <h3>最新动态</h3>
+            <div class="news-items">
+                <div class="news-item card-hover">
+                    <span class="news-date">2026-02-20</span>
+                    <h4>全国大赛预选赛晋级！</h4>
+                    <p>恭喜北宇治高中吹奏部成功晋级全国大赛！</p>
+                    <a href="news.html" class="read-more">阅读更多 →</a>
+                </div>
+                <div class="news-item card-hover">
+                    <span class="news-date">2026-02-15</span>
+                    <h4>新成员欢迎会顺利举行</h4>
+                    <p>20名新生加入我们的大家庭</p>
+                    <a href="news.html" class="read-more">阅读更多 →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 北宇治高中吹奏部 版权所有</p>
+        <p class="footer-links">
+            <a href="about.html">关于我们</a> | 
+            <a href="contact.html">联系我们</a>
+        </p>
+    </div>
+
+    <script src="header.js"></script>
+
+    <style>
+        .hero-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease;
+        }
+
+        .hero-image:hover .hero-img {
+            transform: scale(1.1);
+        }
+
+        .floating-notes {
+            position: absolute;
+            top: 0;
+            right: 20%;
+        }
+
+        .music-note {
+            font-size: 32px;
+            color: #2b21e7;
+            display: block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(15deg);
+            }
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h4 {
+            color: #2b21e7;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .news-items {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .news-item {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-date {
+            display: inline-block;
+            background: #f6b5d7;
+            color: #2b21e7;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .news-item h4 {
+            color: #2b21e7;
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+
+        .news-item p {
+            color: #555;
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+
+        .read-more {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .footer-links a {
+            color: #2b21e7;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</body>
+</html>

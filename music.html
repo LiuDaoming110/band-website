@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐展示 - 北宇治高中吹奏部官网</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main animate-fade-in">
+        <div class="music-hero">
+            <div class="hero-notes">
+                <span class="note">♪</span>
+                <span class="note" style="animation-delay: 0.3s;">♫</span>
+                <span class="note" style="animation-delay: 0.6s;">♩</span>
+                <span class="note" style="animation-delay: 0.9s;">♬</span>
+            </div>
+            <h2>音乐展示</h2>
+            <p class="music-subtitle">聆听我们的旋律，感受音乐的魅力</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="music-list">
+            <div class="music-item card-hover">
+                <div class="music-header">
+                    <div class="music-icon">🎶</div>
+                    <div class="music-info">
+                        <h3>《北宇治高中校歌》</h3>
+                        <div class="music-tags">
+                            <span class="tag">合奏</span>
+                            <span class="tag">校园</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="music-description">北宇治高中校歌，由吹奏部全体成员合奏，展现了学校的精神风貌和学生的青春活力。</p>
+                <div class="music-player">
+                    <audio controls class="audio-player">
+                        <source src="" type="audio/mpeg">
+                        您的浏览器不支持音频播放。
+                    </audio>
+                </div>
+            </div>
+
+            <div class="music-item card-hover">
+                <div class="music-header">
+                    <div class="music-icon">🎵</div>
+                    <div class="music-info">
+                        <h3>《莫扎特第40交响曲》</h3>
+                        <div class="music-tags">
+                            <span class="tag">合奏</span>
+                            <span class="tag">古典</span>
+                            <span class="tag">获奖曲目</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="music-description">莫扎特经典作品，由吹奏部改编为管乐合奏版本，在2025年全国大赛中获得金奖。</p>
+                <div class="music-player">
+                    <audio controls class="audio-player">
+                        <source src="" type="audio/mpeg">
+                        您的浏览器不支持音频播放。
+                    </audio>
+                </div>
+            </div>
+
+            <div class="music-item card-hover">
+                <div class="music-header">
+                    <div class="music-icon">🎷</div>
+                    <div class="music-info">
+                        <h3>《孤独的长笛》</h3>
+                        <div class="music-tags">
+                            <span class="tag">独奏</span>
+                            <span class="tag">长笛</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="music-description">由部长Kumiko演奏的长笛独奏作品，展现了长笛的优美音色和演奏技巧。</p>
+                <div class="music-player">
+                    <audio controls class="audio-player">
+                        <source src="" type="audio/mpeg">
+                        您的浏览器不支持音频播放。
+                    </audio>
+                </div>
+            </div>
+
+            <div class="music-item card-hover">
+                <div class="music-header">
+                    <div class="music-icon">🎺</div>
+                    <div class="music-info">
+                        <h3>《铜管五重奏》</h3>
+                        <div class="music-tags">
+                            <span class="tag">重奏</span>
+                            <span class="tag">铜管</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="music-description">由铜管声部成员演奏的五重奏作品，展现了铜管乐器的独特魅力和和声之美。</p>
+                <div class="music-player">
+                    <audio controls class="audio-player">
+                        <source src="" type="audio/mpeg">
+                        您的浏览器不支持音频播放。
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <section class="instruments">
+            <h3>🎹 乐器介绍</h3>
+            <div class="instruments-grid">
+                <div class="instrument-card card-hover">
+                    <div class="instrument-icon">🎷</div>
+                    <h4>木管乐器</h4>
+                    <p>包括长笛、单簧管、双簧管、巴松等，音色优美细腻</p>
+                </div>
+                <div class="instrument-card card-hover">
+                    <div class="instrument-icon">🎺</div>
+                    <h4>铜管乐器</h4>
+                    <p>包括小号、长号、圆号、大号等，声音雄浑有力</p>
+                </div>
+                <div class="instrument-card card-hover">
+                    <div class="instrument-icon">🥁</div>
+                    <h4>打击乐器</h4>
+                    <p>包括定音鼓、小军鼓、镲等，负责节奏和气氛</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 北宇治高中吹奏部 版权所有</p>
+    </div>
+
+    <script src="header.js"></script>
+
+    <style>
+        .music-hero {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .hero-notes {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .note {
+            font-size: 28px;
+            color: #2b21e7;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(10deg); }
+        }
+
+        .music-subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .music-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .music-item {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .music-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .music-icon {
+            font-size: 40px;
+        }
+
+        .music-info h3 {
+            color: #2b21e7;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        .music-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: linear-gradient(135deg, #f6b5d7, #ffc0cb);
+            color: #2b21e7;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .music-description {
+            color: #555;
+            line-height: 1.6;
+            margin: 0 0 20px 0;
+            font-size: 14px;
+        }
+
+        .audio-player {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .audio-player:hover {
+            transform: scale(1.02);
+        }
+
+        .instruments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .instrument-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .instrument-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .instrument-card h4 {
+            color: #2b21e7;
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+
+        .instrument-card p {
+            color: #555;
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</body>
+</html>
